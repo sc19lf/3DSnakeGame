@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16pt;
+}
+body {
+  height: 90%;
+  margin: 0;
+  font-size: 16pt;
+  background-color:MediumSeaGreen
+}
+#editor {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#controls {
+  background: #3cc249;
+  padding: 5px;
+}
+
+#c {
+
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+
+.gutter {
+  background-color: MediumSeaGreen;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.gutter.gutter-horizontal {
+  cursor: ew-resize;
+  }
+#labels {
+  position: absolute;
+  left: 10px;
+  top: 1%;
+  color: white;
+}
+
+#score {
+  position: absolute;
+  left: 10px;
+  top: 9%;
+  color: white;
+}
+
+#test {
+  position: absolute;
+  left: 10px;
+  top: 40%;
+  color: white;
+  background-color: MediumSeaGreen;
+  font-size: 15px;
+}
+
+
+#cam {
+  position: absolute;
+  left: 10px;
+  top: 15%;
+  color: white;
+}
+
+#video {
+  display: inline;
+  position:relative;
+  top: 22px;
+  left: 5px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 55%;
+}
+.video {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+
+#labels>div, #score>div, #cam>div {
+user-select: none;
+font-size: large;
+ text-shadow:
+    -1px -1px 0 #000,
+     0   -1px 0 #000,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
+}
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>3D SNAKE GAME</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div id="labels"></div>
+  <div id="score"></div>
+  <div id="cam"></div>
+
+  <div id="editor">
+      <div id="view"><canvas id="c"></canvas></div>
+      <div id="controls">
+        <div>
+          <p>Press a/z to move upwards/downwards</p>
+          <p>Press arrow keys to move in each direction</p>
+          <p>Press c to change camera angle</p>
+          <p>Press space to scroll the page.</p>
+        </div>
+      </div>
+    </div>
+
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.js"></script>
+
+  <!--type="module" src="https://threejs.org/manual/examples/threejs-responsive.js" -->
+  <script src = "https://rawcdn.githack.com/mrdoob/three.js/r104/examples/js/loaders/GLTFLoader.js"></script>
+  <!-- <script src="bundle.js"></script> -->
+  <script src="main.js"></script>
+  <script src="https://threejs.org/manual/3rdparty/split.min.js"></script>
+  <script type="module">
+
+
+  Split(['#view', '#controls'], {
+    sizes: [75, 25],
+    minSize: 100,
+    elementStyle: (dimension, size, gutterSize) => {
+      return {
+        'flex-basis': `calc(${size}% - ${gutterSize}px)`,
+      };
+    },
+    gutterStyle: (dimension, gutterSize) => {
+      return {
+        'flex-basis': `${gutterSize}px`,
+      };
+    },
+  });
+  </script>
+
+  <div style = "background-color: MediumSeaGreen; ">
+  <p> Check out this simulator of microorganism <i>C. elegans</i> exhibiting similar movements to the snake: </p>
+  <p> https://gitlab.com/tom-ranner/simple-worm </p>
+  </div>
+  <div class = "container">
+
+  <iframe width="840" height="630" src="https://www.youtube.com/embed/GgZHziFWR7M" frameborder="0" allowfullscreen class ="video"> </iframe>
+
+</span>
+
+
+</body>
+</html>
