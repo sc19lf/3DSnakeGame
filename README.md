@@ -12,4 +12,6 @@ Steps to load the game
 
     E.g. http://localhost:8080/
 
+Demo.mp4 is available if you just want to see the program in action
+
 
